@@ -81,29 +81,29 @@
         </div>
 
         <div class="flex justify-between">
-          <button class="btn">
+          <button  class="btn">
             Life
             <i class="fa-solid fa-heart-circle-bolt"></i>
-            <span>1</span>
+            <span id="current-life">4</span>
           </button>
           <button class="btn">
             Score
             <i class="fa-solid fa-dollar-sign"></i>
-            <span>1</span>
+            <span id="current-score">0</span>
           </button>
         </div>
       </section>
 
-      <section class="hidden">
+      <section id="final-score" class="hidden">
         <div class="flex flex-col justify-center items-center min-h-screen">
           <div
             class="text-white bg-purple-400 w-6/12 mx-auto flex flex-col items-center py-10 gap-3 rounded-xl"
           >
             <h2>
               <span class="text-4xl font-bold">Score:</span>
-              <span class="text-3xl">14</span>
+              <span id="last-score" class="text-3xl">14</span>
             </h2>
-            <button class="btn">Play Again</button>
+            <button onclick="playButton()" class="btn">Play Again</button>
             <p>Practice will make you pro</p>
           </div>
         </div>
